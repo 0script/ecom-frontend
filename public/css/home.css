@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+@import 'nav.css';
+@import 'banner.css';
+@import 'product.css';
+@import 'footer.css';
+
+*{
+  box-sizing: border-box
+}
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+	width: 100%;
+	height: 100vh;
+}
+
+/* Main Menu of the Header Desktop style */
+
+header#myheader{
+	display: flex;
+	flex-direction: column;
+}
+
+div#menu-container{
+	top: 0;
+	padding: auto;
+	margin: auto;
+	width: 100%;
+	height: 10vw;
+	left: 0;
+	right: 0;
+	background-color: #2A4BF2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 5px solid black;
+}
+
+div.container{
+	display: grid;
+	flex-direction: column;
+}
+
+div#menu-container > *{
+	display: block;
+}
+
+img.logo{
+	width: 7vw;
+	height: 7vw;
+}
+
+form.search-form{
+	margin: auto auto auto 100px;
+	width: 45%;
+}
+
+button.search-btn{
+	display: block;
+}
+
+input.search-input{
+	width: 130px;
+	height: 25px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+input.search-input:focus {
+	width: 60vh;
+}
+
+a.cart-link{
+	margin: auto 10px auto auto;
+}
+
+a.sign-in{
+	margin: auto 10px auto 20px;
+	width: 20%;
+}
+
+a.log-in{
+
+	margin: auto auto auto 20px;
+	width: 20%;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+/* Medim ViewPort Design */
+@media (max-width:950px){	
+	
+}
+
+@media (max-width:690px){
+
+	div#menu-container{
+		display: grid;
+		grid-template-columns: 15% 30% 15% 30% 10%;
+		grid-template-rows: auto auto;
+		width: 100vw;
+		height: auto;
+	}
+
+	a#site-logo{
+		grid-column-start: 1;
+		grid-column-end: 2;
+		margin: 10px;
+		padding: 5px;
+	}
+
+	img.logo {
+		width: 10vw;
+		height: 10vw;
+	}
+
+	form.search-form {
+		margin: 10px;
+		width: 45%;
+		padding: 15px;
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+
+	form.search-form button{
+		height: 28px;
+	}
+
+	input#search-input{
+		width: 30vw;
+		height: 25px;
+	}
+
+
+
+	input#search-input:focus{
+		width: 50vw;
+	}
+
+	a.cart-link{
+		grid-row: 2;
+		grid-column: 1;
+		margin: 5px;
+	}
+
+	a.log-in{
+		font-size: 0.9em;
+		grid-row: 2;
+		grid-column-start: 2;
+		width: 25vw;
+		margin: 10px;
+	}
+
+	a.sign-in{
+		grid-row: 2;
+		grid-column-start: 4;
+		width: 25vw;
+		margin: 10px;
+	}
+
+}

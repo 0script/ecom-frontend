@@ -1,0 +1,81 @@
+/*
+  Contain navbar design
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+ul.navbar-container{
+  font-family: inherit;
+  list-style: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+ul.navbar-container li.nav-link{
+  display: block;
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+ul.navbar-container li.nav-link:hover{
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+ul.navbar-container li.nav-link.active {
+  background-color: #ddd;
+  color: white;
+  cursor: not-allowed;
+}
+
+
+ul.navbar-container li.nav-link a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+
+a.icon{
+  display: none;
+}
+
+
+@media (max-width: 960px) {
+  ul.navbar-container{
+    height: 10vh;
+  }
+  ul.navbar-container li.nav-link:not(:last-child){display: none;}
+  
+  a.icon{
+    display: block;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+  }
+
+  ul.navbar-container.responsive{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    
+  }
+
+  ul.navbar-container.responsive li.nav-link{
+    display: block;
+  }
+
+  ul.navbar-container li.nav-link:not(:last-child){order: 1;}
+}
+
+
