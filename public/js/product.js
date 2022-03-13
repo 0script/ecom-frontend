@@ -1,9 +1,9 @@
 const imgs=document.querySelectorAll('img.product-img');
 
 imgs.forEach((img)=>{
-    
-    img.parentElement.addEventListener('mouseenter',()=>{
 
+    img.parentElement.addEventListener('mouseenter',()=>{
+        console.log('enter');
         img.classList.add('not');
         img.parentElement.firstElementChild.classList.add('display');
 

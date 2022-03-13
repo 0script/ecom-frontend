@@ -31,6 +31,7 @@ footer div.max-width-footer{
 footer div.max-width-footer h4{
     font-family: 'Rowdies', sans-serif;;
     text-align: center;
+    padding: 0.3rem;
 }
 
 div.footer-down{
@@ -76,22 +77,22 @@ p.copyright{
         flex-direction: column;
         text-align: center;
         justify-content: center; 
-        padding: 0px;
     }
 
-    footer div.max-width-footer > div > :not(:first-child){
+
+    footer div.max-width-footer:not(:last-child){
         display: none;
     }
-
-    footer div.max-width-footer > div > h4{
-        text-align: center;
-        width: 100vw;
-        padding: 0.5rem;
-        margin: 0px;
+        
+    div.footer-down div.socials-media{
+        margin-left: 0px;
     }
 
-    h4.h4-footer{
-        width: 100%;
+    div.store-location{
+        margin-right: 0px;
     }
-
+    div.footer-contact{
+        margin-right: 0px;    
+    }
+    
 }
