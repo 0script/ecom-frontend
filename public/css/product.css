@@ -93,6 +93,14 @@ div.product-card-container button:hover{
     background-color: darkgray;
 }
 
+span.cart-items-count{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    border-style: none;
+    width: 15%;
+}
+
 @media (max-width: 960px){
     
     div.product-card-container{
@@ -107,19 +115,7 @@ div.product-card-container button:hover{
         font-size: 0.9rem;
     }
 
-    /*
- 
-div.product-card-container ul.lists-details{
-    display: none;
-    list-style: none;
-    text-align: center;
-    background-color: whitesmoke;
-    transition: 0.5s ease;
-    padding: 1rem;
-    background-color: var(--bg-color);
-    color: black;
-}
-    */
+
 }
 
 

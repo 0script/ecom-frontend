@@ -83,6 +83,17 @@ a.cart-link{
 	margin: auto 10px auto auto;
 }
 
+
+span.cart-items-count{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    border-style: none;
+	display: inline-block;
+	width: 1rem;
+	
+}
+
 a.sign-in{
 	margin: auto 10px auto 20px;
 	width: 20%;

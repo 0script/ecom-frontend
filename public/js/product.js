@@ -1,5 +1,6 @@
 const imgs=document.querySelectorAll('img.product-img');
 const add_btns=document.querySelectorAll('button.add-to-cart');
+const cart=document.querySelector('a.cart-link > span');
 
 class CartItem {
     constructor(productname,price,qtt){
@@ -41,5 +42,16 @@ imgs.forEach(img=>{
 
 /* function to add item to cart*/
 add_btns.forEach(btn => {
-    /* will create a local variable that will be a list of CartItem object*/
+    
+    btn.addEventListener('click',()=>{
+    
+        
+        if(cart.innerHTML==''){
+            cart.innerHTML=1;
+        }else{
+            let n=cart.innerHTML;
+            n++;
+            cart.innerHTML=n;
+        }    
+    });
 });
